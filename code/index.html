@@ -1,1 +1,121 @@
-Hola mundo
+<!DOCTYPE html>
+<html lang="es" data-hand="left">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>leftools · Productos y herramientas para zurdos</title>
+  <meta name="description" content="Tijeras, cuadernos, ratones y utensilios diseñados para personas zurdas. Explora por categoría.">
+  <!-- Aplica tema y lado preferidos antes de pintar, para evitar parpadeos -->
+  <script>
+    try {
+      var d = document.documentElement, h = localStorage.getItem('lt-hand'), t = localStorage.getItem('lt-theme');
+      if (h) d.dataset.hand = h;
+      d.dataset.theme = t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#resultados">Saltar a los resultados</a>
+
+  <header class="topbar">
+    <a class="brand" href="./">left<span>tools</span></a>
+
+    <nav class="mainnav" aria-label="Principal">
+      <a href="./" aria-current="page">Catálogo</a>
+      <a href="guia.html">Guía para zurdos</a>
+      <a href="ofertas.html">Ofertas</a>
+    </nav>
+
+    <form class="search" role="search" action="./" method="get">
+      <label class="sr" for="q">Buscar productos</label>
+      <input id="q" name="q" type="search" placeholder="Buscar tijeras, cuadernos, ratones…" autocomplete="off">
+    </form>
+
+    <div class="controls">
+      <button type="button" class="btn" id="handBtn" title="Cambia el lado del menú y de los controles"></button>
+      <button type="button" class="btn" id="themeBtn" aria-label="Cambiar tema claro u oscuro"></button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Categorías">
+      <h2>Categorías</h2>
+      <ul>
+        <li><a href="./" data-cat="all">Todos los productos <span class="count"></span></a></li>
+
+        <li>
+          <details data-cat="utiles">
+            <summary>Útiles escolares</summary>
+            <ul>
+              <li><a href="?cat=utiles" data-cat="utiles">Ver todo <span class="count"></span></a></li>
+              <li><a href="?cat=utiles&amp;sub=cuadernos" data-cat="utiles" data-sub="cuadernos">Cuadernos <span class="count"></span></a></li>
+              <li><a href="?cat=utiles&amp;sub=escritura" data-cat="utiles" data-sub="escritura">Escritura y trazo <span class="count"></span></a></li>
+              <li><a href="?cat=utiles&amp;sub=tijeras" data-cat="utiles" data-sub="tijeras">Tijeras <span class="count"></span></a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details data-cat="papeleria">
+            <summary>Papelería y oficina</summary>
+            <ul>
+              <li><a href="?cat=papeleria" data-cat="papeleria">Ver todo <span class="count"></span></a></li>
+              <li><a href="?cat=papeleria&amp;sub=agendas" data-cat="papeleria" data-sub="agendas">Agendas <span class="count"></span></a></li>
+              <li><a href="?cat=papeleria&amp;sub=escritorio" data-cat="papeleria" data-sub="escritorio">Escritorio <span class="count"></span></a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details data-cat="tecnologia">
+            <summary>Tecnología</summary>
+            <ul>
+              <li><a href="?cat=tecnologia" data-cat="tecnologia">Ver todo <span class="count"></span></a></li>
+              <li><a href="?cat=tecnologia&amp;sub=ratones" data-cat="tecnologia" data-sub="ratones">Ratones <span class="count"></span></a></li>
+              <li><a href="?cat=tecnologia&amp;sub=teclados" data-cat="tecnologia" data-sub="teclados">Teclados <span class="count"></span></a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details data-cat="hogar">
+            <summary>Hogar y cocina</summary>
+            <ul>
+              <li><a href="?cat=hogar" data-cat="hogar">Ver todo <span class="count"></span></a></li>
+              <li><a href="?cat=hogar&amp;sub=cocina" data-cat="hogar" data-sub="cocina">Cocina <span class="count"></span></a></li>
+              <li><a href="?cat=hogar&amp;sub=costura" data-cat="hogar" data-sub="costura">Costura <span class="count"></span></a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </aside>
+
+    <main id="resultados" tabindex="-1">
+      <nav class="crumbs" id="crumbs" aria-label="Ruta de navegación"></nav>
+
+      <div class="head">
+        <h1 id="title">Todos los productos</h1>
+        <p id="status" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="chips" role="group" aria-label="Filtros rápidos">
+        <button type="button" class="chip" data-quick="new" aria-pressed="false">Novedades</button>
+        <button type="button" class="chip" data-quick="cheap" aria-pressed="false">Menos de $200</button>
+        <button type="button" class="chip" data-quick="top" aria-pressed="false">Mejor valorados</button>
+      </div>
+
+      <ul class="grid" id="grid"></ul>
+
+      <p class="empty" id="empty" hidden>
+        No hay productos con esos filtros. Quita un filtro o prueba con otra categoría.
+      </p>
+    </main>
+  </div>
+
+  <!-- Móvil: acceso a categorías en el lado de la mano dominante -->
+  <button type="button" class="fab" id="fab" aria-controls="sidebar" aria-expanded="false">Categorías</button>
+  <div class="backdrop" id="backdrop" hidden></div>
+</body>
+</html>
