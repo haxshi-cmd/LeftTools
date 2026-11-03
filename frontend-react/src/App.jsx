@@ -1,5 +1,6 @@
 
 import Header from "./components/Header";
+import FeaturedProducts from "./components/FeaturedProducts";
 import ProductCard from "./components/ProductCard";
 import ProductGrid from "./components/ProductGrid";
 
@@ -43,7 +44,9 @@ function App() {
 
         <h1>Catálogo LeftTools</h1>
 
-        <section>
+        <FeaturedProducts products={products} />
+
+        <section id="catalogo">
           <h2>Nuestros productos</h2>
 
           <ProductGrid products={products} />

@@ -105,3 +105,51 @@ h1 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -.02em; }
 @media (min-width: 860px) { .backdrop { display: none; } }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ---------- Contenedor de página ---------- */
+.container { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+ 
+/* ---------- Productos destacados (inicio) ---------- */
+.featured {
+  margin: 0 0 2rem; padding: 1.25rem;
+  background: var(--surface); border: 1px solid var(--line); border-radius: calc(var(--r) + 4px);
+}
+.featured__head {
+  display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between;
+  gap: .5rem 1.5rem; margin-bottom: 1rem;
+}
+.featured__eyebrow {
+  margin: 0 0 .2rem; color: var(--accent); font-size: .8rem; font-weight: 800;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+.featured__head h2 { margin: 0; font-size: clamp(1.25rem, 2.5vw, 1.7rem); line-height: 1.25; }
+.featured__lead { max-width: 32rem; margin: 0; color: var(--muted); font-size: .92rem; }
+.featured__status { margin: 0 0 1rem; color: var(--muted); }
+ 
+/* 4 columnas en escritorio, 2 en tableta, 1 en móvil */
+.featured__grid {
+  list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.featured__grid .card { background: var(--bg); }
+.featured__grid .card:not(.slot):hover { border-color: var(--accent); }
+ 
+/* Espacios reservados para tarjetas (vacíos o cargando) */
+.slot { min-height: 100%; border-style: dashed; }
+.slot__thumb { color: var(--accent); opacity: .55; }
+.slot__line { display: block; height: .8rem; border-radius: 4px; background: var(--line); }
+.slot__line--short { width: 45%; }
+.slot__line--price { width: 30%; margin-top: auto; height: 1rem; }
+.slot--loading .thumb,
+.slot--loading .slot__line { animation: slot-pulse 1.4s ease-in-out infinite; }
+@keyframes slot-pulse { 50% { opacity: .45; } }
+ 
+@media (max-width: 1059px) { .featured__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) {
+  .featured { padding: .85rem; }
+  .featured__grid { grid-template-columns: minmax(0, 1fr); }
+  /* Tarjeta horizontal en móvil para ahorrar altura */
+  .featured__grid .card { display: grid; grid-template-columns: 96px minmax(0, 1fr); }
+  .featured__grid .thumb { height: 100%; min-height: 110px; font-size: 2.2rem; }
+}
+@media (prefers-reduced-motion: reduce) { .slot--loading * { animation: none !important; } }
