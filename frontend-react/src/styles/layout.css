@@ -1,0 +1,8 @@
+.layout {
+  display: grid; gap: 1.5rem; max-width: 1200px; margin: 0 auto; padding: 1rem;
+  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-areas: "side main";
+}
+[data-hand="right"] .layout { grid-template-columns: minmax(0, 1fr) 260px; grid-template-areas: "main side"; }
+.sidebar { grid-area: side; align-self: start; position: sticky; top: 5rem; }
+main { grid-area: main; outline: none; }
