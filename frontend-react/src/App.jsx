@@ -1,8 +1,7 @@
 
 import Header from "./components/Header";
 import FeaturedProducts from "./components/FeaturedProducts";
-import ProductCard from "./components/ProductCard";
-import ProductGrid from "./components/ProductGrid";
+import ProductCatalog from "./components/ProductCatalog";
 
 function App() {
 
@@ -49,7 +48,7 @@ function App() {
         <section id="catalogo">
           <h2>Nuestros productos</h2>
 
-          <ProductGrid products={products} />
+          <ProductCatalog />
 
         </section>
 

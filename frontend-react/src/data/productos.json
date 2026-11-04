@@ -1,0 +1,135 @@
+[
+  {
+    "id": 34,
+    "nombre": "Tijeras ergonomicas para zurdos",
+    "precio": 149.9,
+    "imagen": "https://www.pascuamx.com/tienda/tijeras-para-zurdos-21cm-8-2%E2%80%B3/",
+    "categoria": "Escritura y papeleria"
+  },
+  {
+    "id": 35,
+    "nombre": "Cuaderno espiral para zurdos",
+    "precio": 89.9,
+    "imagen": "https://www.amazon.com.mx/Jutom-cuadernos-izquierda-universitaria-suministros/dp/B0CT27ZXDB",
+    "categoria": "Escritura y papeleria"
+  },
+  {
+    "id": 36,
+    "nombre": "Destornillador ergonomico para zurdos",
+    "precio": 129.9,
+    "imagen": "https://www.walmart.com.mx/ip/destornillador-para-zurdos-con-trinquete-en-t-de-grado-profesional-engranaje-de-3-posiciones-para-un-trinquete-eficiente-juego-de-llaves-de-grifo-con-mango-en-t-ajustable-varilla-de-mango/00958195129239",
+    "categoria": "Herramientas manuales"
+  },
+  {
+    "id": 37,
+    "nombre": "Pinzas de precision para zurdos",
+    "precio": 79.9,
+    "imagen": "https://www.amazon.com.mx/verduras-zanahoria-antideslizante-cuchillas-inoxidable/dp/B0DS6Y4DWL",
+    "categoria": "Herramientas manuales"
+  },
+  {
+    "id": 38,
+    "nombre": "Pelador de verduras para zurdos",
+    "precio": 119.9,
+    "imagen": "https://www.hobbees.com.mx/products/non-stick-titanium-micro-serrated-scissors-tijera-de-titanium-para-zurdos",
+    "categoria": "Cocina"
+  },
+  {
+    "id": 39,
+    "nombre": "Cuchillo de cocina para zurdos",
+    "precio": 459.0,
+    "imagen": "https://global.ichimonji.co.jp/es/pages/left-handed-knives",
+    "categoria": "Cocina"
+  },
+  {
+    "id": 40,
+    "nombre": "Tijeras de podar para zurdos",
+    "precio": 249.9,
+    "imagen": "https://grupocsmexico.com/felco/producto/tijeras-felco-9-tijeras-para-podar-a-una-mano-zurdo/",
+    "categoria": "Jardineria"
+  },
+  {
+    "id": 41,
+    "nombre": "Pala de jardin ergonomica",
+    "precio": 179.9,
+    "imagen": "https://www.amazon.com/-/es/ergon%C3%B3mico-secundario-rastrillos-herramientas-construcci%C3%B3n/dp/B06WW5TLZV",
+    "categoria": "Jardineria"
+  },
+  {
+    "id": 42,
+    "nombre": "Mouse ergonomico para zurdos",
+    "precio": 389.0,
+    "imagen": "https://www.amazon.com.mx/KUNSI-inal%C3%A1mbrico-ergon%C3%B3mico-ajustable-computadora/dp/B0F4J1J65P",
+    "categoria": "Oficina"
+  },
+  {
+    "id": 43,
+    "nombre": "Teclado numerico para zurdos",
+    "precio": 299.0,
+    "imagen": "https://gt.ebay.com/b/Left-Handed-Keyboard/33963/bn_7023345782",
+    "categoria": "Oficina"
+  },
+  {
+    "id": 44,
+    "nombre": "Set de lapices profesionales",
+    "precio": 189.9,
+    "imagen": "https://www.amazon.com.mx/Stabilo-EASYgraph-escritura-unidades-Graphite/dp/B003WQFADG",
+    "categoria": "Arte y dibujo"
+  },
+  {
+    "id": 45,
+    "nombre": "Tableta de dibujo digital",
+    "precio": 1299.0,
+    "imagen": "https://www.infobae.com/2012/08/29/667581-genius-presento-oficialmente-una-tableta-digital-pensada-zurdos/",
+    "categoria": "Arte y dibujo"
+  },
+  {
+    "id": 46,
+    "nombre": "Guante de beisbol para zurdos",
+    "precio": 699.0,
+    "imagen": "https://www.mercadolibre.com.mx/guante-de-beisbol-zurdo-radach-pro-115in-rojo-negro-115/p/MLM53340966",
+    "categoria": "Deportes"
+  },
+  {
+    "id": 47,
+    "nombre": "Guante de golf para zurdos",
+    "precio": 249.9,
+    "imagen": "https://www.amazon.com.mx/Fockety-Silicona-Antideslizante-el%C3%A1stico-Entrenamiento/dp/B0GR6SB5J3",
+    "categoria": "Deportes"
+  },
+  {
+    "id": 48,
+    "nombre": "Guitarra acustica para zurdos",
+    "precio": 3299.0,
+    "imagen": "https://es.fender.com/pages/left-handed",
+    "categoria": "Instrumentos musicales"
+  },
+  {
+    "id": 49,
+    "nombre": "Ukelele para zurdos",
+    "precio": 899.0,
+    "imagen": "https://ukesmx.com/ukulele-para-zurdos/",
+    "categoria": "Instrumentos musicales"
+  },
+  {
+    "id": 50,
+    "nombre": "Apoya muneca ergonomico",
+    "precio": 159.9,
+    "imagen": "https://www.mercadolibre.com.mx/soporte-ergonomico-apoya-muneca-90gradosshop-silicona-zurdo-negro/p/MLM29080764",
+    "categoria": "Accesorios ergonomicos"
+  },
+  {
+    "id": 51,
+    "nombre": "Lapiz ergonomico de agarre",
+    "precio": 59.9,
+    "imagen": "https://www.amazon.com.mx/Maped-Visio-224320-Bol%C3%ADgrafo-zurdos/dp/B00ASN6ND2",
+    "categoria": "Accesorios ergonomicos"
+  },
+  {
+    "id": 53,
+    "nombre": "Abaco educativo",
+    "precio": 129.9,
+    "imagen": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80",
+    "categoria": "Educacion y aprendizaje"
+  }
+]
