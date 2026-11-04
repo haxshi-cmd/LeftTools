@@ -42,4 +42,31 @@ router.get("/destacados", async (req, res) => {
   }
 });
 
+// GET /api/productos  -> catálogo completo (solo productos activos)
+router.get("/", async (_req, res) => {
+  try {
+    const [productos] = await db.execute(
+      `SELECT
+         p.id_producto,
+         p.nombre,
+         p.precio,
+         p.imagen_url,
+         c.nombre AS categoria
+       FROM productos AS p
+       INNER JOIN categorias AS c
+         ON c.id_categoria = p.id_categoria
+       WHERE p.estado = 'activo'
+         AND c.activa = 1
+       ORDER BY p.id_producto`
+    );
+
+    res.json({ datos: productos });
+  } catch (error) {
+    console.error("Error al consultar el catálogo:", error.message);
+    res.status(500).json({
+      mensaje: "No fue posible consultar el catálogo."
+    });
+  }
+});
+
 module.exports = router;
