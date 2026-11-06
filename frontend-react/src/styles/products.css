@@ -7,8 +7,9 @@
   transition: border-color .2s ease, transform .2s ease;
 }
 .card:hover { border-color: var(--accent); }
-.thumb { display: grid; place-items: center; height: 120px; font-size: 3rem; background: var(--soft); }
-.thumb img { display: block; width: 100%; height: 100%; object-fit: contain; background: #fff; }
+.thumb { position: relative; overflow: hidden; display: grid; place-items: center; height: 120px; font-size: 3rem; background: var(--soft); }
+/* La foto se posiciona dentro del recuadro para que nunca lo desborde, sin importar su tamaño real */
+.thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #fff; }
 .thumb__fallback { color: var(--accent); opacity: .7; }
 .body { display: flex; flex-direction: column; gap: .35rem; padding: .75rem; flex: 1; }
 

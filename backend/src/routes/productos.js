@@ -4,13 +4,23 @@ const db = require("../db");
 const router = express.Router();
 
 // GET /api/productos/destacados
+// Los destacados son los productos con mayor `popularidad`.
+// Los que aún no tienen popularidad (NULL) quedan al final.
 router.get("/destacados", async (req, res) => {
   try {
     const limiteSolicitado = Number.parseInt(req.query.limite, 10);
     const limite = Number.isInteger(limiteSolicitado)
       ? Math.min(Math.max(limiteSolicitado, 1), 24)
-      : 8;
+      : 4; // la sección de inicio tiene 4 espacios
 
+    /* --- CONSULTA ANTERIOR (ya no sirve) ---
+       Filtraba con la columna `destacado`, que ya no existe en la base de
+       datos actual (se reemplazó por `popularidad`):
+         WHERE p.destacado = 1
+           AND p.estado = 'activo'
+           AND c.activa = 1
+         ORDER BY p.fecha_creacion DESC, p.id_producto DESC
+    */
     const [productos] = await db.execute(
       `SELECT
          p.id_producto,
@@ -21,14 +31,15 @@ router.get("/destacados", async (req, res) => {
          p.stock,
          p.imagen_url,
          p.es_zurdo,
+         p.popularidad,
          c.nombre AS categoria
        FROM productos AS p
        INNER JOIN categorias AS c
          ON c.id_categoria = p.id_categoria
-       WHERE p.destacado = 1
-         AND p.estado = 'activo'
+       WHERE p.estado = 'activo'
          AND c.activa = 1
-       ORDER BY p.fecha_creacion DESC, p.id_producto DESC
+       ORDER BY (p.popularidad IS NULL), p.popularidad DESC,
+                p.fecha_creacion DESC, p.id_producto DESC
        LIMIT ?`,
       [limite]
     );
@@ -51,6 +62,7 @@ router.get("/", async (_req, res) => {
          p.nombre,
          p.precio,
          p.imagen_url,
+         p.popularidad,
          c.nombre AS categoria
        FROM productos AS p
        INNER JOIN categorias AS c
