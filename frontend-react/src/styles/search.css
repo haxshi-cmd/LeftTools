@@ -1,0 +1,37 @@
+/* ---------- Barra de búsqueda del navbar (HU02.1) ----------
+   La base (.search y .search input) ya está en global.css; en celular la
+   barra pasa a ocupar su propia fila. Aquí solo se agrega la lista desplegable. */
+.search { position: relative; }
+.search input { text-overflow: ellipsis; }
+.search input::placeholder { color: var(--muted); opacity: 1; }
+
+.search__panel {
+  position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 40;
+  max-height: min(70vh, 26rem); overflow: auto;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r);
+  box-shadow: 0 14px 32px rgb(0 0 0 / .5);
+}
+.search__list { list-style: none; margin: 0; padding: .25rem; }
+.search__item {
+  display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center;
+  gap: .75rem; padding: .5rem; border-radius: calc(var(--r) - 2px);
+}
+.search__item:hover { background: var(--soft); }
+.search__thumb {
+  width: 44px; height: 44px; border-radius: 6px; object-fit: contain; background: #fff;
+}
+.search__thumb--vacia {
+  display: grid; place-items: center; background: var(--soft); color: var(--accent); opacity: .8;
+}
+.search__text { display: flex; flex-direction: column; min-width: 0; }
+.search__name {
+  font-size: .95rem; font-weight: 600; line-height: 1.3; color: var(--text);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden;
+}
+.search__meta { font-size: .8rem; color: var(--muted); }
+.search__price { font-weight: 700; color: #c4b5fd; white-space: nowrap; }
+.search__hint, .search__empty {
+  margin: 0; padding: .6rem .85rem; font-size: .85rem; color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+.search__empty { border-top: 0; font-size: .95rem; }

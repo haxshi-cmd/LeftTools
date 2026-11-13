@@ -60,6 +60,7 @@ router.get("/", async (_req, res) => {
       `SELECT
          p.id_producto,
          p.nombre,
+         p.descripcion,
          p.precio,
          p.imagen_url,
          p.popularidad,

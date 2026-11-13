@@ -10,6 +10,7 @@ function normalizar(fila) {
     precio: Number(fila.precio) || 0,
     imagen: fila.imagen ?? fila.imagen_url ?? "",
     categoria: fila.categoria ?? "",
+    descripcion: fila.descripcion ?? "", // se usa para buscar por descripción
     // null = el producto todavía no tiene popularidad asignada
     popularidad: fila.popularidad == null ? null : Number(fila.popularidad)
   };
@@ -54,12 +55,26 @@ export async function obtenerDestacados(limite = 4) {
   }
 }
 
+// El catálogo, el buscador y los resultados usan los mismos productos:
+// se consultan una sola vez y se comparten (se vuelven a pedir al recargar la página).
+let productosEnMemoria = null;
+
 /**
  * Catálogo completo para la vista de productos.
  * Lee GET /api/productos (base de datos). Si el backend no está
  * encendido, usa data/productos.json (exportado del .sql).
  */
-export async function obtenerProductos() {
+export function obtenerProductos() {
+  if (!productosEnMemoria) {
+    productosEnMemoria = cargarProductos().catch((error) => {
+      productosEnMemoria = null; // si falla, el próximo intento vuelve a consultar
+      throw error;
+    });
+  }
+  return productosEnMemoria;
+}
+
+async function cargarProductos() {
   try {
     const respuesta = await fetch(`${API_URL}/productos`);
 

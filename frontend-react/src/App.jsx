@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import FeaturedProducts from "./components/FeaturedProducts";
 import ProductCatalog from "./components/ProductCatalog";
 import Login from "./components/Login";
+import Resultados from "./pages/Resultados";
 import { obtenerDestacados } from "./services/productosService";
 
 /* --- PRODUCTOS DE EJEMPLO (ya no se usan) ---
@@ -87,21 +89,35 @@ function App() {
         onLogout={cerrarSesion}
       />
 
-      <main className="container">
-        <h1>Catálogo LeftTools</h1>
+      <Routes>
+        {/* Inicio: catálogo principal (sin cambios) */}
+        <Route
+          path="/"
+          element={
+            <main className="container">
+              <h1>Catálogo LeftTools</h1>
 
-        <FeaturedProducts
-          products={destacados}
-          loading={cargandoDestacados}
-          error={errorDestacados}
-          onBuy={comprar}
+              <FeaturedProducts
+                products={destacados}
+                loading={cargandoDestacados}
+                error={errorDestacados}
+                onBuy={comprar}
+              />
+
+              <section id="catalogo">
+                <h2>Nuestros productos</h2>
+                <ProductCatalog onBuy={comprar} />
+              </section>
+            </main>
+          }
         />
 
-        <section id="catalogo">
-          <h2>Nuestros productos</h2>
-          <ProductCatalog onBuy={comprar} />
-        </section>
-      </main>
+        {/* Resultados de la búsqueda: #/buscar?q=texto */}
+        <Route path="/buscar" element={<Resultados />} />
+
+        {/* Cualquier otra dirección vuelve al inicio */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
 
       {mostrarLogin && <Login onLogin={alIniciarSesion} onClose={cerrarLogin} />}
     </>

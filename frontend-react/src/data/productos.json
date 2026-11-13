@@ -2,6 +2,7 @@
   {
     "id": 34,
     "nombre": "Tijeras ergonomicas para zurdos",
+    "descripcion": "Tijeras con hojas invertidas para realizar cortes precisos con la mano izquierda.",
     "precio": 149.9,
     "imagen": "https://www.jilu.fr/cdn/shop/products/2_280fe115-f327-4ffc-aecd-5cb8d0b88a3e_900x.jpg?v=1628932910",
     "categoria": "Escritura y papeleria",
@@ -10,6 +11,7 @@
   {
     "id": 35,
     "nombre": "Cuaderno espiral para zurdos",
+    "descripcion": "Cuaderno con espiral superior para evitar molestias al escribir con la mano izquierda.",
     "precio": 89.9,
     "imagen": "https://m.media-amazon.com/images/I/71pMnwBFeKL._SY342_.jpg",
     "categoria": "Escritura y papeleria",
@@ -18,6 +20,7 @@
   {
     "id": 36,
     "nombre": "Destornillador ergonomico para zurdos",
+    "descripcion": "Herramienta manual con mango ergonomico que facilita el agarre y la manipulacion.",
     "precio": 129.9,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_621229-MLA99928933903_112025-F.webp",
     "categoria": "Herramientas manuales",
@@ -26,6 +29,7 @@
   {
     "id": 37,
     "nombre": "Pinzas de precision para zurdos",
+    "descripcion": "Pinzas disenadas para facilitar trabajos de precision utilizando la mano izquierda.",
     "precio": 79.9,
     "imagen": "https://m.media-amazon.com/images/I/41eao0nlVEL._AC_SX679_.jpg",
     "categoria": "Herramientas manuales",
@@ -34,6 +38,7 @@
   {
     "id": 38,
     "nombre": "Pelador de verduras para zurdos",
+    "descripcion": "Pelador con diseno ergonomico para facilitar el pelado de frutas y verduras.",
     "precio": 119.9,
     "imagen": "https://m.media-amazon.com/images/I/513gn0aIDVL._AC_SX679_.jpg",
     "categoria": "Cocina",
@@ -42,6 +47,7 @@
   {
     "id": 39,
     "nombre": "Cuchillo de cocina para zurdos",
+    "descripcion": "Cuchillo con filo adaptado para facilitar los cortes con la mano izquierda.",
     "precio": 459.0,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_879259-MLM85685759617_062025-F.webp",
     "categoria": "Cocina",
@@ -50,6 +56,7 @@
   {
     "id": 40,
     "nombre": "Tijeras de podar para zurdos",
+    "descripcion": "Tijeras de jardin con agarre adaptado para realizar cortes de ramas y plantas.",
     "precio": 249.9,
     "imagen": "https://grupocsmexico.com/felco/wp-content/uploads/2025/04/felco9-img-zurdo-768x768.jpg",
     "categoria": "Jardineria",
@@ -58,6 +65,7 @@
   {
     "id": 41,
     "nombre": "Pala de jardin ergonomica",
+    "descripcion": "Pala manual con mango comodo para realizar trabajos de jardineria.",
     "precio": 179.9,
     "imagen": "https://m.media-amazon.com/images/I/51S68ct7odL._AC_SX679_.jpg",
     "categoria": "Jardineria",
@@ -66,6 +74,7 @@
   {
     "id": 42,
     "nombre": "Mouse ergonomico para zurdos",
+    "descripcion": "Mouse con diseno ergonomico adaptado para utilizarse con la mano izquierda.",
     "precio": 389.0,
     "imagen": "https://m.media-amazon.com/images/I/61EWLRLgYQL._AC_SX522_.jpg",
     "categoria": "Oficina",
@@ -74,6 +83,7 @@
   {
     "id": 43,
     "nombre": "Teclado numerico para zurdos",
+    "descripcion": "Teclado numerico independiente para facilitar el acceso a operaciones desde el lado izquierdo.",
     "precio": 299.0,
     "imagen": "https://i.etsystatic.com/26960488/r/il/b8dd2c/5770944308/il_1588xN.5770944308_o64g.jpg",
     "categoria": "Oficina",
@@ -82,6 +92,7 @@
   {
     "id": 44,
     "nombre": "Set de lapices profesionales",
+    "descripcion": "Conjunto de lapices de dibujo con diferentes graduaciones para ilustracion y bocetos.",
     "precio": 189.9,
     "imagen": "https://i5-mx.walmartimages.com/asr/6271418f-ef9a-4056-8bae-77caff28ca5e.04ec93841fc1d4c7131f39df14ede734.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     "categoria": "Arte y dibujo",
@@ -90,6 +101,7 @@
   {
     "id": 45,
     "nombre": "Tableta de dibujo digital",
+    "descripcion": "Tableta digitalizadora para realizar ilustraciones y disenos mediante computadora.",
     "precio": 1299.0,
     "imagen": "https://i5-mx.walmartimages.com/asr/d36b0473-e0f2-443b-9522-4543ad555d34.b5e71fb9da7c951894c66f1fa551e798.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     "categoria": "Arte y dibujo",
@@ -98,6 +110,7 @@
   {
     "id": 46,
     "nombre": "Guante de beisbol para zurdos",
+    "descripcion": "Guante deportivo con configuracion para jugadores que lanzan con la mano derecha y atrapan con la izquierda.",
     "precio": 699.0,
     "imagen": "https://m.media-amazon.com/images/I/61GqDg7QMpL._AC_SY300_SX300_QL70_ML2_.jpg",
     "categoria": "Deportes",
@@ -106,6 +119,7 @@
   {
     "id": 47,
     "nombre": "Guante de golf para zurdos",
+    "descripcion": "Guante deportivo disenado para ofrecer mejor agarre durante el juego de golf.",
     "precio": 249.9,
     "imagen": "https://i5-mx.walmartimages.com/asr/7b701014-7c10-4156-957f-f88324560fcd.71fb4d090b1eef0dd1d4697bfb5d5002.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     "categoria": "Deportes",
@@ -114,6 +128,7 @@
   {
     "id": 48,
     "nombre": "Guitarra acustica para zurdos",
+    "descripcion": "Guitarra acustica con distribucion de cuerdas y configuracion para musicos zurdos.",
     "precio": 3299.0,
     "imagen": "https://martinguitarmexico.com/wp-content/uploads/2022/10/000-12-Fret-Cutaway-1.jpg",
     "categoria": "Instrumentos musicales",
@@ -122,6 +137,7 @@
   {
     "id": 49,
     "nombre": "Ukelele para zurdos",
+    "descripcion": "Ukelele con configuracion de cuerdas adaptada para interpretar musica con la mano izquierda.",
     "precio": 899.0,
     "imagen": "https://m.media-amazon.com/images/I/71j4vJlpo3L._AC_SY300_SX300_QL70_ML2_.jpg",
     "categoria": "Instrumentos musicales",
@@ -130,6 +146,7 @@
   {
     "id": 50,
     "nombre": "Apoya muneca ergonomico",
+    "descripcion": "Accesorio acolchado para brindar comodidad durante sesiones prolongadas de trabajo.",
     "precio": 159.9,
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6LsLbJ0cS2JlrWRcUdj8RGgi2SwvNwngR2PRPhJ9tg6nCPo4kl7AseFyL&s=10",
     "categoria": "Accesorios ergonomicos",
@@ -138,6 +155,7 @@
   {
     "id": 51,
     "nombre": "Lapiz ergonomico de agarre",
+    "descripcion": "Lapiz con adaptador ergonomico que facilita la sujecion y escritura con la mano izquierda.",
     "precio": 59.9,
     "imagen": "https://m.media-amazon.com/images/I/71TDL7Y7EaL._AC_SY300_SX300_QL70_ML2_.jpg",
     "categoria": "Accesorios ergonomicos",
@@ -146,6 +164,7 @@
   {
     "id": 53,
     "nombre": "Abaco educativo",
+    "descripcion": "Material didactico para aprender operaciones matematicas de manera visual y practica.",
     "precio": 129.9,
     "imagen": "https://m.media-amazon.com/images/I/6195vqwTmtL._AC_SX425_.jpg",
     "categoria": "Educacion y aprendizaje",
@@ -154,6 +173,7 @@
   {
     "id": 54,
     "nombre": "Cinta metrica para zurdos",
+    "descripcion": "Cinta metrica con numeros impresos de derecha a izquierda para facilitar las mediciones utilizando la mano izquierda.",
     "precio": 129.9,
     "imagen": "https://http2.mlstatic.com/D_Q_NP_754597-MLM93214425911_092025-F.webp",
     "categoria": "Herramientas manuales",
@@ -162,6 +182,7 @@
   {
     "id": 55,
     "nombre": "Sacapuntas para zurdos",
+    "descripcion": "Sacapuntas con cuchillas orientadas para permitir girar el lapiz en sentido contrario a las agujas del reloj de manera comoda.",
     "precio": 39.9,
     "imagen": "https://m.media-amazon.com/images/I/71kYXVyIbzL._AC_SY606_.jpg",
     "categoria": "Escritura y papeleria",
@@ -170,6 +191,7 @@
   {
     "id": 56,
     "nombre": "Reloj de pulsera para zurdos",
+    "descripcion": "Reloj con corona de ajuste adaptada para facilitar su manipulacion y consulta de hora utilizando la mano izquierda.",
     "precio": 599.0,
     "imagen": "https://media.revistagq.com/photos/65b27895c9f859a796cdad61/master/w_960,c_limit/LUMINOR%20MARINA.jpg",
     "categoria": "Accesorios ergonomicos",
