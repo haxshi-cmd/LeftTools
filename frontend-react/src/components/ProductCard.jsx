@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const dinero = new Intl.NumberFormat("es-MX", {
   style: "currency",
@@ -6,13 +7,15 @@ const dinero = new Intl.NumberFormat("es-MX", {
 });
 
 /**
- * Tarjeta de producto: foto, nombre y precio.
+ * Tarjeta de producto: foto, nombre y precio. Toda la tarjeta abre la
+ * ficha del producto (#/producto/:id).
  * Acepta { nombre, precio, imagen } (catálogo) o { name, price, icon }
  * (datos de ejemplo de la página de inicio).
  */
 function ProductCard({ product }) {
   const [imagenFalla, setImagenFalla] = useState(false);
 
+  const id = product.id ?? product.id_producto;
   const nombre = product.nombre || product.name;
   const precio = Number(product.precio ?? product.price) || 0;
   const imagen = product.imagen || product.imagen_url;
@@ -36,7 +39,13 @@ function ProductCard({ product }) {
 
       <div className="body">
         <h3 className="card__name" title={nombre}>
-          {nombre}
+          {id != null ? (
+            <Link className="card__link" to={`/producto/${id}`}>
+              {nombre}
+            </Link>
+          ) : (
+            nombre
+          )}
         </h3>
         <strong className="card__price">{dinero.format(precio)}</strong>
       </div>

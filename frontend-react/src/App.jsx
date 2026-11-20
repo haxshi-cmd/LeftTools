@@ -5,6 +5,7 @@ import FeaturedProducts from "./components/FeaturedProducts";
 import ProductCatalog from "./components/ProductCatalog";
 import Login from "./components/Login";
 import Resultados from "./pages/Resultados";
+import Producto from "./pages/Producto";
 import { obtenerDestacados } from "./services/productosService";
 
 /* --- PRODUCTOS DE EJEMPLO (ya no se usan) ---
@@ -114,6 +115,9 @@ function App() {
 
         {/* Resultados de la búsqueda: #/buscar?q=texto */}
         <Route path="/buscar" element={<Resultados />} />
+
+        {/* Ficha de un producto: #/producto/34 (F06) */}
+        <Route path="/producto/:id" element={<Producto />} />
 
         {/* Cualquier otra dirección vuelve al inicio */}
         <Route path="*" element={<Navigate to="/" replace />} />

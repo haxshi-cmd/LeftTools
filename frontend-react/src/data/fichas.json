@@ -1,0 +1,678 @@
+{
+  "34": {
+    "marca": "LeftyTools",
+    "stock": 25,
+    "utilidad": "Las tijeras comunes están hechas para la mano derecha: al cortar con la izquierda las hojas se separan y la línea de corte queda tapada. Aquí las hojas están invertidas, así que la presión natural del pulgar izquierdo las mantiene unidas y el corte siempre se ve.",
+    "etiquetas": [
+      "Escuela",
+      "Corte",
+      "Ergonómico"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 1,
+        "nombre": "Papelería Escolar Centro",
+        "direccion": "Av. Tulum, SM 22",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0001",
+        "latitud": 21.1632,
+        "longitud": -86.8266,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": true
+      }
+    ]
+  },
+  "35": {
+    "marca": "LeftyPaper",
+    "stock": 40,
+    "utilidad": "En un cuaderno de espiral lateral, la muñeca izquierda choca con las anillas al escribir cerca del margen. Con el espiral en la parte superior no hay nada bajo la mano, así que se escribe y se pasa de página sin estorbos.",
+    "etiquetas": [
+      "Escuela",
+      "Escritura",
+      "Cuadernos"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 1,
+        "nombre": "Papelería Escolar Centro",
+        "direccion": "Av. Tulum, SM 22",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0001",
+        "latitud": 21.1632,
+        "longitud": -86.8266,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": true
+      }
+    ]
+  },
+  "36": {
+    "marca": "ToolMaster",
+    "stock": 20,
+    "utilidad": "Muchas herramientas manuales están pensadas para accionarse con la derecha. Su mango ergonómico se sujeta con comodidad con la mano izquierda y permite girar sin torcer la muñeca ni cambiar de mano a mitad del trabajo.",
+    "etiquetas": [
+      "Herramientas",
+      "Ergonómico",
+      "Bricolaje"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 2,
+        "nombre": "Ferretería La Esquina",
+        "direccion": "Av. Uxmal, SM 25",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0002",
+        "latitud": 21.1604,
+        "longitud": -86.8312,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": false
+      }
+    ]
+  },
+  "37": {
+    "marca": "PrecisionTools",
+    "stock": 30,
+    "utilidad": "Las pinzas de precisión suelen estar orientadas para el pulgar derecho. Estas facilitan sujetar y guiar piezas pequeñas con la izquierda, con mejor control de la punta y sin tapar la zona de trabajo.",
+    "etiquetas": [
+      "Herramientas",
+      "Precisión",
+      "Bricolaje"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 2,
+        "nombre": "Ferretería La Esquina",
+        "direccion": "Av. Uxmal, SM 25",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0002",
+        "latitud": 21.1604,
+        "longitud": -86.8312,
+        "disponible": true
+      },
+      {
+        "id": 5,
+        "nombre": "Tecno Oficina Cancún",
+        "direccion": "Av. Cobá, SM 3",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0005",
+        "latitud": 21.1586,
+        "longitud": -86.8247,
+        "disponible": true
+      }
+    ]
+  },
+  "38": {
+    "marca": "KitchenLeft",
+    "stock": 22,
+    "utilidad": "La hoja del pelador está orientada para pelar con el movimiento natural de la mano izquierda, de modo que no hay que torcer la muñeca ni cambiar el agarre para que la cuchilla corte bien.",
+    "etiquetas": [
+      "Cocina",
+      "Ergonómico",
+      "Corte"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 3,
+        "nombre": "Hogar y Cocina Cancún",
+        "direccion": "Av. Bonampak, SM 4",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0003",
+        "latitud": 21.1527,
+        "longitud": -86.8271,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": true
+      }
+    ]
+  },
+  "39": {
+    "marca": "ChefLeft",
+    "stock": 10,
+    "utilidad": "En un cuchillo común el filo está pensado para la mano derecha y, al usarlo con la izquierda, tiende a desviarse y a tapar la vista del corte. El filo adaptado corta recto al presionar con la izquierda y deja ver la trayectoria.",
+    "etiquetas": [
+      "Cocina",
+      "Corte",
+      "Chef"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 3,
+        "nombre": "Hogar y Cocina Cancún",
+        "direccion": "Av. Bonampak, SM 4",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0003",
+        "latitud": 21.1527,
+        "longitud": -86.8271,
+        "disponible": true
+      }
+    ]
+  },
+  "40": {
+    "marca": "GardenPro",
+    "stock": 15,
+    "utilidad": "En unas tijeras de podar para diestros la hoja de corte queda del lado contrario y la rama se atora al cortar con la izquierda. Con el agarre invertido, la hoja cortante queda del lado correcto y el corte es limpio con menos esfuerzo.",
+    "etiquetas": [
+      "Jardinería",
+      "Corte",
+      "Exterior"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 4,
+        "nombre": "Jardín y Vivero Verde",
+        "direccion": "Av. Nader, SM 5",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0004",
+        "latitud": 21.1651,
+        "longitud": -86.8289,
+        "disponible": true
+      },
+      {
+        "id": 2,
+        "nombre": "Ferretería La Esquina",
+        "direccion": "Av. Uxmal, SM 25",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0002",
+        "latitud": 21.1604,
+        "longitud": -86.8312,
+        "disponible": true
+      }
+    ]
+  },
+  "41": {
+    "marca": "GreenTools",
+    "stock": 18,
+    "utilidad": "El mango ergonómico reparte la presión en la palma y evita ampollas y molestias en la muñeca durante sesiones largas de jardinería, trabajando con la mano izquierda al frente.",
+    "etiquetas": [
+      "Jardinería",
+      "Ergonómico",
+      "Exterior"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 4,
+        "nombre": "Jardín y Vivero Verde",
+        "direccion": "Av. Nader, SM 5",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0004",
+        "latitud": 21.1651,
+        "longitud": -86.8289,
+        "disponible": true
+      },
+      {
+        "id": 2,
+        "nombre": "Ferretería La Esquina",
+        "direccion": "Av. Uxmal, SM 25",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0002",
+        "latitud": 21.1604,
+        "longitud": -86.8312,
+        "disponible": false
+      }
+    ]
+  },
+  "42": {
+    "marca": "ErgoTech",
+    "stock": 18,
+    "utilidad": "Los ratones comunes tienen el contorno para el pulgar y los botones principales pensados para la mano derecha. Este diseño está adaptado para que la palma y el pulgar izquierdos descansen de forma natural y el clic principal quede bajo el dedo índice izquierdo.",
+    "etiquetas": [
+      "Oficina",
+      "Tecnología",
+      "Ergonómico"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 5,
+        "nombre": "Tecno Oficina Cancún",
+        "direccion": "Av. Cobá, SM 3",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0005",
+        "latitud": 21.1586,
+        "longitud": -86.8247,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": true
+      }
+    ]
+  },
+  "43": {
+    "marca": "TechLeft",
+    "stock": 12,
+    "utilidad": "Un teclado con bloque numérico a la derecha obliga a cruzar el brazo o soltar el ratón. Un teclado numérico independiente se coloca del lado izquierdo y permite capturar cifras con la mano izquierda sin cruzar el brazo sobre el teclado.",
+    "etiquetas": [
+      "Oficina",
+      "Tecnología",
+      "Captura de datos"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 5,
+        "nombre": "Tecno Oficina Cancún",
+        "direccion": "Av. Cobá, SM 3",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0005",
+        "latitud": 21.1586,
+        "longitud": -86.8247,
+        "disponible": true
+      }
+    ]
+  },
+  "44": {
+    "marca": "ArtDesign",
+    "stock": 25,
+    "utilidad": "Al escribir de izquierda a derecha, la mano izquierda arrastra sobre el trazo recién hecho y mancha el grafito. Este set con distintas graduaciones permite elegir grafitos más duros, que manchan menos, para detalles y sombras.",
+    "etiquetas": [
+      "Arte",
+      "Dibujo",
+      "Escuela"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 6,
+        "nombre": "Arte y Color",
+        "direccion": "Av. Yaxchilán, SM 22",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0006",
+        "latitud": 21.1639,
+        "longitud": -86.8245,
+        "disponible": true
+      },
+      {
+        "id": 1,
+        "nombre": "Papelería Escolar Centro",
+        "direccion": "Av. Tulum, SM 22",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0001",
+        "latitud": 21.1632,
+        "longitud": -86.8266,
+        "disponible": true
+      }
+    ]
+  },
+  "45": {
+    "marca": "CreativeTech",
+    "stock": 8,
+    "utilidad": "Al dibujar en una superficie digital no hay grafito ni tinta que se corran al pasar la mano, y la tableta se puede colocar en el ángulo más cómodo para la mano izquierda.",
+    "etiquetas": [
+      "Arte",
+      "Tecnología",
+      "Dibujo"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 5,
+        "nombre": "Tecno Oficina Cancún",
+        "direccion": "Av. Cobá, SM 3",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0005",
+        "latitud": 21.1586,
+        "longitud": -86.8247,
+        "disponible": true
+      },
+      {
+        "id": 6,
+        "nombre": "Arte y Color",
+        "direccion": "Av. Yaxchilán, SM 22",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0006",
+        "latitud": 21.1639,
+        "longitud": -86.8245,
+        "disponible": true
+      }
+    ]
+  },
+  "46": {
+    "marca": "SportLeft",
+    "stock": 10,
+    "utilidad": "Es el modelo para jugadores que lanzan con la mano izquierda: el guante se usa en la mano derecha, de modo que la izquierda queda libre para tomar la pelota y lanzar sin tener que quitarse el guante.",
+    "etiquetas": [
+      "Deportes",
+      "Béisbol",
+      "Exterior"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 7,
+        "nombre": "Deportes Cancún",
+        "direccion": "Av. Tulum, SM 21",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0007",
+        "latitud": 21.1561,
+        "longitud": -86.8262,
+        "disponible": true
+      }
+    ]
+  },
+  "47": {
+    "marca": "GolfPro",
+    "stock": 20,
+    "utilidad": "Un golfista zurdo guía el palo con la mano derecha al frente, por lo que el guante se usa en la derecha. Los guantes comunes se venden para la mano izquierda; esta versión da agarre antideslizante en la mano correcta.",
+    "etiquetas": [
+      "Deportes",
+      "Golf",
+      "Exterior"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 7,
+        "nombre": "Deportes Cancún",
+        "direccion": "Av. Tulum, SM 21",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0007",
+        "latitud": 21.1561,
+        "longitud": -86.8262,
+        "disponible": true
+      },
+      {
+        "id": 9,
+        "nombre": "Accesorios y Relojes del Caribe",
+        "direccion": "Av. Tulum, SM 23",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0009",
+        "latitud": 21.1597,
+        "longitud": -86.8269,
+        "disponible": false
+      }
+    ]
+  },
+  "48": {
+    "marca": "MusicPro",
+    "stock": 5,
+    "utilidad": "Está fabricada en espejo para quien rasguea con la mano izquierda y pisa los trastes con la derecha. Así se pueden seguir acordes y tablaturas normales sin invertir el orden de las cuerdas, como pasa al voltear una guitarra para diestros.",
+    "etiquetas": [
+      "Música",
+      "Cuerdas",
+      "Principiantes y expertos"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 8,
+        "nombre": "Casa Musical Cancún",
+        "direccion": "Av. Chichén Itzá, SM 24",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0008",
+        "latitud": 21.1619,
+        "longitud": -86.833,
+        "disponible": true
+      }
+    ]
+  },
+  "49": {
+    "marca": "SoundLeft",
+    "stock": 7,
+    "utilidad": "Viene con las cuerdas dispuestas para quien rasguea con la mano izquierda, evitando voltear un ukelele para diestros y cambiar las cuerdas a mano para que los acordes suenen bien.",
+    "etiquetas": [
+      "Música",
+      "Cuerdas",
+      "Principiantes y expertos"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 8,
+        "nombre": "Casa Musical Cancún",
+        "direccion": "Av. Chichén Itzá, SM 24",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0008",
+        "latitud": 21.1619,
+        "longitud": -86.833,
+        "disponible": true
+      }
+    ]
+  },
+  "50": {
+    "marca": "ComfortZone",
+    "stock": 30,
+    "utilidad": "Quien escribe o usa el ratón con la mano izquierda suele apoyar la muñeca en el borde del escritorio, que es duro y la inclina. El apoyo acolchado la mantiene recta y reduce la tensión en sesiones prolongadas.",
+    "etiquetas": [
+      "Oficina",
+      "Ergonómico",
+      "Comodidad"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 5,
+        "nombre": "Tecno Oficina Cancún",
+        "direccion": "Av. Cobá, SM 3",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0005",
+        "latitud": 21.1586,
+        "longitud": -86.8247,
+        "disponible": true
+      },
+      {
+        "id": 9,
+        "nombre": "Accesorios y Relojes del Caribe",
+        "direccion": "Av. Tulum, SM 23",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0009",
+        "latitud": 21.1597,
+        "longitud": -86.8269,
+        "disponible": true
+      }
+    ]
+  },
+  "51": {
+    "marca": "EasyGrip",
+    "stock": 45,
+    "utilidad": "El adaptador acomoda los dedos en una posición natural, un poco alejada de la punta. Así la mano no tapa lo que se escribe, se arrastra menos sobre el trazo fresco y se reduce la fatiga al escribir con la izquierda.",
+    "etiquetas": [
+      "Escuela",
+      "Escritura",
+      "Ergonómico"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 1,
+        "nombre": "Papelería Escolar Centro",
+        "direccion": "Av. Tulum, SM 22",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0001",
+        "latitud": 21.1632,
+        "longitud": -86.8266,
+        "disponible": true
+      },
+      {
+        "id": 9,
+        "nombre": "Accesorios y Relojes del Caribe",
+        "direccion": "Av. Tulum, SM 23",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0009",
+        "latitud": 21.1597,
+        "longitud": -86.8269,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": true
+      }
+    ]
+  },
+  "53": {
+    "marca": "LearningPro",
+    "stock": 20,
+    "utilidad": "Los niños zurdos pueden mover las cuentas con la mano izquierda y colocar el bastidor en la posición que les resulte más cómoda, de modo que aprenden a contar sin adaptar su postura.",
+    "etiquetas": [
+      "Escuela",
+      "Educación",
+      "Niños"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 1,
+        "nombre": "Papelería Escolar Centro",
+        "direccion": "Av. Tulum, SM 22",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0001",
+        "latitud": 21.1632,
+        "longitud": -86.8266,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": true
+      }
+    ]
+  },
+  "54": {
+    "marca": "MeasurePro",
+    "stock": 25,
+    "utilidad": "Con la cinta en la mano izquierda, la numeración corre de derecha a izquierda, así que los números quedan en la orientación correcta para leerlos al medir, sin voltear la cinta ni leerla al revés.",
+    "etiquetas": [
+      "Herramientas",
+      "Medición",
+      "Precisión"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 2,
+        "nombre": "Ferretería La Esquina",
+        "direccion": "Av. Uxmal, SM 25",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0002",
+        "latitud": 21.1604,
+        "longitud": -86.8312,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": true
+      }
+    ]
+  },
+  "55": {
+    "marca": "LeftySharp",
+    "stock": 40,
+    "utilidad": "Los sacapuntas comunes obligan a girar el lápiz en el sentido de las agujas del reloj, que es cómodo con la derecha. Este tiene las cuchillas orientadas para girar el lápiz en sentido contrario, el movimiento natural de la mano izquierda.",
+    "etiquetas": [
+      "Escuela",
+      "Escritura",
+      "Papelería"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 1,
+        "nombre": "Papelería Escolar Centro",
+        "direccion": "Av. Tulum, SM 22",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0001",
+        "latitud": 21.1632,
+        "longitud": -86.8266,
+        "disponible": true
+      },
+      {
+        "id": 10,
+        "nombre": "Súper Útiles Cancún",
+        "direccion": "Av. López Portillo, SM 29",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0010",
+        "latitud": 21.1675,
+        "longitud": -86.8199,
+        "disponible": true
+      }
+    ]
+  },
+  "56": {
+    "marca": "TimeLeft",
+    "stock": 12,
+    "utilidad": "Los relojes comunes llevan la corona del lado derecho para ajustarlos con la mano derecha. Aquí la corona está adaptada para ajustar la hora y consultarla con comodidad usando la mano izquierda.",
+    "etiquetas": [
+      "Accesorios",
+      "Relojes",
+      "Uso diario"
+    ],
+    "imagenes": [],
+    "tiendas": [
+      {
+        "id": 9,
+        "nombre": "Accesorios y Relojes del Caribe",
+        "direccion": "Av. Tulum, SM 23",
+        "ciudad": "Cancún, Q. Roo",
+        "telefono": "998 000 0009",
+        "latitud": 21.1597,
+        "longitud": -86.8269,
+        "disponible": true
+      }
+    ]
+  }
+}

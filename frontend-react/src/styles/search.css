@@ -16,7 +16,13 @@
   display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center;
   gap: .75rem; padding: .5rem; border-radius: calc(var(--r) - 2px);
 }
-.search__item:hover { background: var(--soft); }
+.search__item { position: relative; }
+.search__item:hover, .search__item:focus-within { background: var(--soft); }
+/* Enlace "estirado": toda la fila abre la ficha */
+.search__link { text-decoration: none; }
+.search__link::after { content: ""; position: absolute; inset: 0; }
+.search__link:focus-visible { outline: none; }
+.search__link:focus-visible::after { outline: 3px solid var(--accent); outline-offset: -3px; border-radius: calc(var(--r) - 2px); }
 .search__thumb {
   width: 44px; height: 44px; border-radius: 6px; object-fit: contain; background: #fff;
 }

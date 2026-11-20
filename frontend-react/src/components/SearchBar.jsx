@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate, useSearchParams, useLocation } from "react-router-dom";
+import { Link, useNavigate, useSearchParams, useLocation } from "react-router-dom";
 import { obtenerProductos } from "../services/productosService";
 import { buscarProductos } from "../utils/buscarProductos";
 import "../styles/search.css";
@@ -107,7 +107,9 @@ function SearchBar() {
                   <li key={producto.id} className="search__item">
                     <Miniatura imagen={producto.imagen} />
                     <span className="search__text">
-                      <span className="search__name">{producto.nombre}</span>
+                      <Link className="search__name search__link" to={`/producto/${producto.id}`}>
+                        {producto.nombre}
+                      </Link>
                       <span className="search__meta">{producto.categoria}</span>
                     </span>
                     <span className="search__price">{dinero.format(producto.precio)}</span>

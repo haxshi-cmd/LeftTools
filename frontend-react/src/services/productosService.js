@@ -1,4 +1,5 @@
 import productosRespaldo from "../data/productos.json";
+import fichasRespaldo from "../data/fichas.json";
 
 const API_URL = "http://localhost:3000/api";
 
@@ -90,5 +91,104 @@ async function cargarProductos() {
       error.message
     );
     return productosRespaldo.map(normalizar);
+  }
+}
+
+/* ---------------------------------------------------------------------
+ * Ficha de producto (F06)
+ * ------------------------------------------------------------------- */
+
+// Quita fotos sin dirección y direcciones repetidas.
+function normalizarImagenes(lista) {
+  const vistas = new Set();
+  const resultado = [];
+  for (const imagen of lista ?? []) {
+    const url = typeof imagen === "string" ? imagen : imagen?.url;
+    if (!url || vistas.has(url)) continue;
+    vistas.add(url);
+    resultado.push({ url, descripcion: imagen?.descripcion ?? "" });
+  }
+  return resultado;
+}
+
+// MySQL entrega DECIMAL como texto ("21.160400"); null = sin ubicación.
+function coordenada(valor) {
+  const numero = Number(valor);
+  return valor == null || valor === "" || !Number.isFinite(numero) ? null : numero;
+}
+
+// Deja la ficha con los campos que usa la interfaz, venga de la API o del respaldo.
+function normalizarFicha(fila) {
+  return {
+    id: fila.id ?? fila.id_producto,
+    nombre: fila.nombre,
+    precio: Number(fila.precio) || 0,
+    categoria: fila.categoria ?? "",
+    marca: fila.marca ?? "",
+    descripcion: fila.descripcion ?? "",
+    utilidad: fila.utilidad_zurdos ?? fila.utilidad ?? "",
+    stock: Number(fila.stock) || 0,
+    estado: fila.estado ?? "activo",
+    etiquetas: (fila.etiquetas ?? []).filter(Boolean),
+    imagenes: normalizarImagenes(fila.imagenes),
+    tiendas: (fila.tiendas ?? []).map((t) => ({
+      id: t.id ?? t.id_tienda,
+      nombre: t.nombre,
+      direccion: t.direccion ?? "",
+      ciudad: t.ciudad ?? "",
+      telefono: t.telefono ?? "",
+      latitud: coordenada(t.latitud),
+      longitud: coordenada(t.longitud),
+      disponible: t.disponible == null ? true : Boolean(Number(t.disponible))
+    }))
+  };
+}
+
+// Ficha armada con data/productos.json + data/fichas.json (sin backend).
+function fichaDeRespaldo(id) {
+  const base = productosRespaldo.find((p) => String(p.id) === String(id));
+  if (!base) return null;
+
+  const extra = fichasRespaldo[String(id)] ?? {};
+  return normalizarFicha({
+    ...base,
+    ...extra,
+    imagenes: [
+      { url: base.imagen, descripcion: base.nombre },
+      ...(extra.imagenes ?? [])
+    ]
+  });
+}
+
+function usarRespaldoFicha(id, motivo) {
+  console.warn(`API no disponible, ficha desde data/fichas.json: ${motivo}`);
+  return fichaDeRespaldo(id);
+}
+
+/**
+ * Ficha completa de un producto.
+ * Lee GET /api/productos/:id (base de datos). Si el backend no está
+ * encendido o falla, usa data/productos.json + data/fichas.json.
+ * Devuelve null cuando el producto no existe.
+ */
+export async function obtenerFicha(id) {
+  // Solo ids numéricos: cualquier otra cosa no puede ser un producto.
+  if (!/^\d+$/.test(String(id))) return null;
+
+  let respuesta;
+  try {
+    respuesta = await fetch(`${API_URL}/productos/${id}`);
+  } catch (error) {
+    return usarRespaldoFicha(id, error.message);
+  }
+
+  if (respuesta.status === 404) return null;
+  if (!respuesta.ok) return usarRespaldoFicha(id, `HTTP ${respuesta.status}`);
+
+  try {
+    const resultado = await respuesta.json();
+    return normalizarFicha(resultado.datos);
+  } catch (error) {
+    return usarRespaldoFicha(id, error.message);
   }
 }

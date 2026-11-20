@@ -7,6 +7,15 @@
   transition: border-color .2s ease, transform .2s ease;
 }
 .card:hover { border-color: var(--accent); }
+.card:focus-within { border-color: var(--accent); }
+
+/* Enlace "estirado": el nombre es el enlace, pero toda la tarjeta responde al clic */
+.card { position: relative; }
+.card__link { color: inherit; text-decoration: none; }
+.card__link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.card__link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.card__link:focus-visible { outline: none; }
+.card__link:focus-visible::after { outline: 3px solid var(--accent); outline-offset: -3px; border-radius: var(--r); }
 .thumb { position: relative; overflow: hidden; display: grid; place-items: center; height: 120px; font-size: 3rem; background: var(--soft); }
 /* La foto se posiciona dentro del recuadro para que nunca lo desborde, sin importar su tamaño real */
 .thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #fff; }
